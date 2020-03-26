@@ -1,0 +1,10 @@
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\bin\Debug\SampleProjectRADONC.exe.config
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\bin\Debug\SampleProjectRADONC.exe
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\bin\Debug\SampleProjectRADONC.pdb
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\obj\Debug\SampleProjectRadOnc.csproj.CoreCompileInputs.cache
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\obj\Debug\SampleProjectRadOnc.csproj.CopyComplete
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\obj\Debug\SampleProjectRADONC.exe
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\obj\Debug\SampleProjectRADONC.pdb
+C:\Users\320068644\source\repos\SampleProjectRADONC\SampleProjectRADONC\obj\Debug\SampleProjectRadOnc.csprojAssemblyReference.cache

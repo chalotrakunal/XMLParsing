@@ -1,0 +1,39 @@
+<TestRun>
+  <DateTime>13:23:34 3-3-2020</DateTime>
+  <HostName>INGHTBGFTR</HostName>
+  <UserID>sdr01</UserID>
+  <version />
+  <TestCaseResults>
+    <TestCaseResult>
+      <TestStepResults>
+        <TestStepResult>
+          <LogBeginLine>
+          </LogBeginLine>
+          <Description>prepare GetHospitalExamCardsInfo
+            execute GetHospitalExamCardsInfo</Description>
+          <Expected>N/A</Expected>
+          <Actual>N/A</Actual>
+          <Attachment />
+          <Passed>False</Passed>
+          <LogEndLine>N/A</LogEndLine>
+        </TestStepResult>
+        <TestStepResult>
+          <LogBeginLine>
+          </LogBeginLine>
+          <Description>let SeenExamCards = new list
+      let SeenExamCardSignatures = new list
+      let NumberOfExamCardsReturnedByScanner = length of GetHospitalExamCardsInfo.NormalResponse.exam_cards
+      let TestExamCards = test exam cards in EXAM_CARD_REPOSITORY_HOSPITAL_MRTC_FOLDER
+      let NumberOfTestExamCards = length of TestExamCards</Description>
+          <Expected>N/A</Expected>
+          <Actual>N/A</Actual>
+          <Attachment />
+          <Passed>False</Passed>
+          <LogEndLine>N/A</LogEndLine>
+        </TestStepResult>
+      </TestStepResults>
+      <TestCaseName>Verify that GetHospitalExamCardsInfo returns correct information about installed MRTC ExamCards_v1</TestCaseName>
+      <TestCaseHash>N/A</TestCaseHash>
+    </TestCaseResult>
+  </TestCaseResults>
+</TestRun>
