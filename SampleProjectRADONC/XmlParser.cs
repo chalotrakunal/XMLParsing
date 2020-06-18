@@ -23,34 +23,34 @@ namespace SampleProjectRADONC
         }
         private TestCaseResults GetTestCaseResults()
         {
-            var retTestCaseResults = new TestCaseResults();
-            var testCaseResults = docxml.SelectNodes("//TestRun/TestCaseResults/TestCaseResult");
+            TestCaseResults retTestCaseResults = new TestCaseResults();
+            XmlNodeList testCaseResults = docxml.SelectNodes("//TestRun/TestCaseResults/TestCaseResult");
             foreach(XmlNode node in testCaseResults)
             {
-                var res = GetTestCaseResult(node);
+                TestCaseResult res = GetTestCaseResult(node);
                 retTestCaseResults.Add(res);
             }
             return retTestCaseResults;
         }
         private TestCaseResult GetTestCaseResult(XmlNode node)
         {
-            var testCaseName = node.SelectSingleNode("TestCaseName").InnerText;
-            var retTestCaseResult = new TestCaseResult(testCaseName);
-            var testStepResultsXml = node.SelectSingleNode("TestStepResults");
-            var res = GetListOfTestStepResult(testStepResultsXml);
+            string testCaseName = node.SelectSingleNode("TestCaseName").InnerText;
+            TestCaseResult retTestCaseResult = new TestCaseResult(testCaseName);
+            XmlNode testStepResultsXml = node.SelectSingleNode("TestStepResults");
+            TestStepResults res = GetListOfTestStepResult(testStepResultsXml);
             retTestCaseResult.Add(res);
             return retTestCaseResult;
         }
         private TestStepResults GetListOfTestStepResult(XmlNode node)
         {
-            var listOfTestStepResult = new TestStepResults();
-            var testStepResultNodes = node.ChildNodes;
+            TestStepResults listOfTestStepResult = new TestStepResults();
+            XmlNodeList testStepResultNodes = node.ChildNodes;
             foreach(XmlNode resNode in testStepResultNodes)
             {
-                var desc = resNode.SelectSingleNode("Description").InnerText;
-                var passed = resNode.SelectSingleNode("Passed").InnerText;
-                var val = (passed == "True") ? true : false;
-                var testStepResult = new TestStepResult(desc, val);
+                string desc = resNode.SelectSingleNode("Description").InnerText;
+                string passed = resNode.SelectSingleNode("Passed").InnerText;
+                bool val = (passed == "True") ? true : false;
+                TestStepResult testStepResult = new TestStepResult(desc, val);
                 listOfTestStepResult.Add(testStepResult);
             }
             return listOfTestStepResult;

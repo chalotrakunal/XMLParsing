@@ -29,8 +29,8 @@ namespace SampleProjectRADONC
                 TestStepResults testStepResults = new TestStepResults();
                 foreach (var testStepResult in testcase.GetAllTestStepResults().GetTestStepResults())
                 {
-                    bool bPassed = testStepResult.IsPassed();
-                    if (!bPassed)
+                    bool isPassed = testStepResult.IsPassed();
+                    if (!isPassed)
                     {
                         testStepResults.Add(testStepResult);
                     }
