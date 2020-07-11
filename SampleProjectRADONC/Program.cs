@@ -17,7 +17,7 @@ namespace SampleProjectRADONC
             TextFileRead filereadinput = new TextFileRead();
             filereadinput.ReadFileContent("C:\\RadOnc\\Input.txt");
             string fileContentInput = filereadinput.GetTextFileContent().ToLower();
-            Console.WriteLine(fileContentInput);
+           // Console.WriteLine(fileContentInput);
             Parser parser;
             if (fileContentInput == "xml")
             {

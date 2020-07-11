@@ -22,7 +22,7 @@ namespace SampleProjectRADONC
         private TestRun GetFailedTestRunObj(List<TestCaseResult> failedTestCases)
         {
             _testRunFailed = new TestRun("13:23:34 3-3-2020", "INGHTBGFTR", "sdr01");
-            TestCaseResults testCaseREsults = new TestCaseResults();
+            TestCaseResults testCaseResults = new TestCaseResults();
             foreach (var testcase in failedTestCases)
             {
                 TestCaseResult testcaseRes = new TestCaseResult(testcase.getTestCaseName());
@@ -36,9 +36,9 @@ namespace SampleProjectRADONC
                     }
                 }
                 testcaseRes.Add(testStepResults);
-                testCaseREsults.Add(testcaseRes);
+                testCaseResults.Add(testcaseRes);
             }
-            _testRunFailed.Add(testCaseREsults);
+            _testRunFailed.Add(testCaseResults);
             return _testRunFailed;
         }
         public void FailedResults()
